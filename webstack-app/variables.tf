@@ -13,3 +13,5 @@ variable "ec2_role" {}
 variable "public_subnets" {}
 variable "private_subnets" {}
 variable "global_vpc_id" {}
+variable "global_environment" {}
+variable "businessunit" {}
