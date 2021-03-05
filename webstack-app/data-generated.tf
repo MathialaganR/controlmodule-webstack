@@ -12,3 +12,7 @@ data "aws_ami" "latest_ami" {
     values = ["CentOS Linux 7*"]
   }
 }
+
+data "aws_security_group" "bastion_sg" {
+  name            = "bastion-sg"
+}

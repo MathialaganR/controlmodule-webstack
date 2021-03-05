@@ -15,3 +15,4 @@ variable "private_subnets" {}
 variable "global_vpc_id" {}
 variable "global_environment" {}
 variable "businessunit" {}
+variable "availability_zones" {}
