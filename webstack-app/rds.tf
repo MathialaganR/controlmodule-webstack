@@ -36,7 +36,7 @@ module "webstack-rds" {
   rds_engine_type = "mysql"
   rds_engine_version = "5.7"
   rds_instance_basename = "webstack"
-  rds_instance_class = "db.t3.micro"
+  rds_instance_class = "db.t2.micro"
   rds_storage_type = "gp2"
   skip_final_snapshot = "true"
   db_port = "3306"
@@ -44,5 +44,8 @@ module "webstack-rds" {
   trusted_sg = "sg-9585e1ac"
   route53_required = "false"
   global_costcentre = "${var.global_costcode}"
+  rds_deletion_protection = "false"
+  backup_retention_period = "0"
+  apply_immediately = "true"
 
 }
