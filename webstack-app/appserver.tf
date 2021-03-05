@@ -27,11 +27,8 @@ module "webstack" {
   global_environment               = "dev"
   ec2_role                         = "${var.ec2_role}"
   orchestration                    = "${var.global_orchestration}"
-
   listener_lb_port                 = "443"
   idle_timeout                     = "10"
-
-
   ec2_user_data                    = "userdata.sh"
   ssl_cert_arn                     = "arn:aws:acm:us-west-2:890090367563:certificate/aead5df3-b94f-4185-b9ef-dda55d120f41"
   tag_product                      = "${var.global_product}"
