@@ -41,7 +41,7 @@ module "webstack-rds" {
   skip_final_snapshot = "true"
   db_port = "3306"
   db_protocol = "tcp"
-  trusted_sg = "sg-9585e1ac"
+  trusted_sg = "${module.webstack.ec2_sg_id}"
   route53_required = "false"
   global_costcentre = "${var.global_costcode}"
   rds_deletion_protection = "false"
