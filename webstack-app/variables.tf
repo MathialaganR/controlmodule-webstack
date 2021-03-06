@@ -2,9 +2,7 @@ variable "aws_region" {
   default = "us-west-2"
 }
 variable "aws_profile" {}
-
 variable "account_id" {}
-
 variable "global_costcode" {}
 variable "cidr_blocks" {}
 variable "global_product" {}

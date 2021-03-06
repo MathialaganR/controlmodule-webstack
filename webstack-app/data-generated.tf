@@ -3,8 +3,9 @@
 ################################################################
 
 data "aws_ami" "latest_ami" {
-  most_recent      = true
-  owners           = ["aws-marketplace"]
+  most_recent = true
+  owners      = ["aws-marketplace"]
+
   #executable_users = ["self"]
 
   filter {
@@ -14,5 +15,5 @@ data "aws_ami" "latest_ami" {
 }
 
 data "aws_security_group" "bastion_sg" {
-  name            = "bastion-sg"
+  name = "bastion-sg"
 }
