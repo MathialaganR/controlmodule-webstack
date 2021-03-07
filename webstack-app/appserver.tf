@@ -29,7 +29,7 @@ module "webstack" {
   listener_lb_port    = "443"
   idle_timeout        = "10"
   ec2_user_data       = "userdata.sh"
-  ssl_cert_arn        = "arn:aws:acm:us-west-2:890090367563:certificate/aead5df3-b94f-4185-b9ef-dda55d120f41"
+  ssl_cert_arn        = "arn:aws:acm:us-west-2:890090367563:certificate/cf7289df-6d25-46b5-adea-5d1f3d24d92b"
   tag_product         = "${var.global_product}"
   deployed_service    = "${var.ec2_role}"
 }
