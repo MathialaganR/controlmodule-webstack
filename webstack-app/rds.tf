@@ -16,7 +16,7 @@ resource "random_password" "webstack_gen_password" {
 }
 
 module "webstack-rds" {
-  source = "git@github.com:MathialaganR/terraform-rds-trmb.git"
+  source = "git@github.com:MathialaganR/terraform-rds-trmb.git?ref=1.0.0"
 
   apps                      = "${var.global_product}"
   tag_product               = "${var.global_product}"

@@ -4,5 +4,6 @@ terraform {
     key     = "dev/app/terraform.tfstate"
     region  = "us-west-2"
     profile = "aws-personal-rmathi"
+    encrypt =  true
   }
 }

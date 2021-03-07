@@ -8,7 +8,7 @@ provider "aws" {
 #--------------------------------------------------------------
 
 module "webstack" {
-  source = "git@github.com:MathialaganR/terraform-webstack-trmb.git"
+  source = "git@github.com:MathialaganR/terraform-webstack-trmb.git?ref=1.0.0"
 
   ec2_hostrecord      = "webstackserver"
   ec2_instance_type   = "t2.nano"

@@ -4,7 +4,7 @@ resource "random_string" "auth_token" {
 }
 
 module "webstack_redis" {
-  source = "git@github.com:MathialaganR/terraform-elasticcache-trmb.git"
+  source = "git@github.com:MathialaganR/terraform-elasticcache-trmb.git?ref=1.0.0"
 
   namespace          = "general"
   name               = "redis"
