@@ -8,7 +8,7 @@ hostnamectl set-hostname ${appliedhostname}
 # Patch
 #
 sudo yum update -y
-sudo yum install epel-release
+sudo yum install epel-release -y
 sudo yum install git -y
 sudo yum install ansible -y
 cd /tmp
