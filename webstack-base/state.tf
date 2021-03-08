@@ -4,7 +4,8 @@ terraform {
     key     = "dev/infra/terraform.tfstate"
     region  = "us-west-2"
     profile = "aws-personal-rmathi"
-    encrypt =  true
+    encrypt = true
   }
+
   required_version = "~> 0.11.0"
 }
