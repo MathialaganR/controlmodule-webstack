@@ -15,5 +15,5 @@ data "aws_ami" "latest_ami" {
 }
 
 data "aws_security_group" "bastion_sg" {
-  name = "bastion-sg"
+  name = "bastion"
 }

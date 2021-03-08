@@ -8,7 +8,7 @@ provider "aws" {
 #--------------------------------------------------------------
 
 module "webstack" {
-  source = "git@github.com:MathialaganR/terraform-webstack-trmb.git?ref=1.0.1"
+  source = "git@github.com:MathialaganR/terraform-webstack-trmb.git?ref=1.0.2"
 
   ec2_hostrecord      = "${var.ec2_hostrecord}"
   ec2_instance_type   = "${var.ec2_instance_type}"
@@ -34,4 +34,5 @@ module "webstack" {
   deployed_service    = "${var.ec2_role}"
   global_phz_id       = "${var.global_phz_id}"
   ec2_alb_cname       = "${var.ec2_alb_cname}"
+  elb_internal        = "false"
 }

@@ -49,5 +49,5 @@ module "webstack-rds" {
   apply_immediately         = "true"
   global_phz_id             = "Z03864231F5248D2M0CKW"
   rds_route53               = "webstackrds"
-  route53_required          = "true"
+
 }

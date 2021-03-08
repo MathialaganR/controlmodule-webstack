@@ -12,7 +12,7 @@ module "webstack_redis" {
   security_groups     = ["${module.webstack.ec2_sg_id}", "${data.aws_security_group.bastion_sg.id}"]
   auth_token          = "${random_string.auth_token.result}"
   vpc_id              = "${var.global_vpc_id}"
-  subnets             = ["subnet-0a06d640", "subnet-f9bd3ca4"]
+  subnets             = ["subnet-0f769c9d30adcbc0a", "subnet-0904012549e743503"]
   maintenance_window  = "wed:03:00-wed:04:00"
   cluster_size        = "1"
   instance_type       = "cache.t2.micro"
