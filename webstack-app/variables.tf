@@ -15,3 +15,13 @@ variable "global_vpc_id" {}
 variable "global_environment" {}
 variable "businessunit" {}
 variable "availability_zones" {}
+variable "alb_cidr_blocks" {}
+variable "global_key_name" {}
+variable "ec2_instance_type" {}
+variable "ec2_hostrecord" {}
+variable "ec2_rootvol_size" {}
+variable "listener_lb_port" {}
+variable "idle_timeout" {}
+variable "ssl_cert_arn" {}
+variable "global_phz_id" {}
+variable "ec2_alb_cname" {}
