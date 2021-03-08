@@ -8,7 +8,7 @@ provider "aws" {
 #--------------------------------------------------------------
 
 module "webstack" {
-  source = "git@github.com:MathialaganR/terraform-webstack-trmb.git?ref=1.0.0"
+  source = "git@github.com:MathialaganR/terraform-webstack-trmb.git?ref=1.0.1"
 
   ec2_hostrecord      = "webstackserver"
   ec2_instance_type   = "t2.nano"
@@ -32,4 +32,6 @@ module "webstack" {
   ssl_cert_arn        = "arn:aws:acm:us-west-2:890090367563:certificate/cf7289df-6d25-46b5-adea-5d1f3d24d92b"
   tag_product         = "${var.global_product}"
   deployed_service    = "${var.ec2_role}"
+  global_phz_id       = "Z03864231F5248D2M0CKW"
+  ec2_alb_cname       = "webstack"
 }

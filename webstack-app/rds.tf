@@ -16,7 +16,7 @@ resource "random_password" "webstack_gen_password" {
 }
 
 module "webstack-rds" {
-  source = "git@github.com:MathialaganR/terraform-rds-trmb.git?ref=1.0.0"
+  source = "git@github.com:MathialaganR/terraform-rds-trmb.git?ref=1.0.1"
 
   apps                      = "${var.global_product}"
   tag_product               = "${var.global_product}"
@@ -42,9 +42,12 @@ module "webstack-rds" {
   db_port                   = "3306"
   db_protocol               = "tcp"
   trusted_sg                = "${module.webstack.ec2_sg_id}"
-  route53_required          = "false"
+  route53_required          = "true"
   global_costcentre         = "${var.global_costcode}"
   rds_deletion_protection   = "false"
   backup_retention_period   = "0"
   apply_immediately         = "true"
+  global_phz_id             = "Z03864231F5248D2M0CKW"
+  rds_route53               = "webstackrds"
+  route53_required          = "true"
 }
