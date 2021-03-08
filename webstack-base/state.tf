@@ -6,4 +6,5 @@ terraform {
     profile = "aws-personal-rmathi"
     encrypt =  true
   }
+  required_version = "~> 0.11.0"
 }
