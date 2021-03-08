@@ -25,3 +25,6 @@ variable "idle_timeout" {}
 variable "ssl_cert_arn" {}
 variable "global_phz_id" {}
 variable "ec2_alb_cname" {}
+
+variable "database_name" {}
+variable "rds_allocated_storage" {}
