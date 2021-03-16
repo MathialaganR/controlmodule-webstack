@@ -8,14 +8,14 @@ provider "aws" {
 #--------------------------------------------------------------
 
 module "lambda_inventory" {
-  #source = "git@github.com:MathialaganR/terraform-lambda-trmb.git"
+  source = "git@github.com:MathialaganR/terraform-lambda-trmb.git?ref=1.0.0"
 
-  source = "../../terraform-lambda-trmb/"
+  #source = "../../terraform-lambda-trmb/"
 
   function_name = "ec2inventory_lambda_tf"
-  handler_name  = "ec2inventory_lambdahandler_tf"
-  subnet_ids    = ["subnet-0a06d640","subnet-67fa4c1f"]
-  security_group_id = ["sg-9585e1ac"]
+  handler_name  = "lambda_function.lambda_handler"
+  subnet_ids    = ["subnet-01e692f7ef810aa5d","subnet-0836aca4f46d9cbd0"]
+  security_group_id = ["sg-0c72f378e687cd39d"]
 
 }
 
